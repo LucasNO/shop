@@ -11,6 +11,7 @@ Para testar é recomendado usar o plugin RESTED para firefox ou chrome
 ### Inserindo Produto
 
 URL: https://shop-rest.herokuapp.com/shop/produto/
+
 Method: Post
 
 Headers
@@ -27,11 +28,13 @@ Adicionar os parametros
 ### Listar Produtos Cadastrados 
 
 URL: https://shop-rest.herokuapp.com/shop/produtos/
+
 Method: Get
 
 ### Atualizando Produto
 
 URL: https://shop-rest.herokuapp.com/shop/produto/{id}
+
 Method: Put
 
 Headers
@@ -49,6 +52,7 @@ Adicionar os parametros
 ### Deletando Produto
 
 URL: https://shop-rest.herokuapp.com/shop/produto/{id}
+
 Method: Delete
 
 Request body 
@@ -57,6 +61,7 @@ Type: Json
 ### Inserindo Produto No Carrinho
 
 URL: https://shop-rest.herokuapp.com/shop/carrinho/{comprador}/{idPrduto}/{quantidade}
+
 Method: Post
 
 Headers
@@ -68,11 +73,13 @@ Type: Json
 ### Listar Carrinho de Compras de um comprador 
 
 URL: https://shop-rest.herokuapp.com/shop/carrinho/{comprador}
+
 Method: Get
 
 ### Atualizando Produto no Carrinho
 
 URL: https://shop-rest.herokuapp.com/shop/carrinho/{comprador}/{idPrduto}/{quantidade}
+
 Method: Put
 
 Headers
@@ -85,4 +92,5 @@ Type: Json
 ### Deletando Produto do Carrinho
 
 URL: https://shop-rest.herokuapp.com/shop/carrinho/{id}
+
 Method: Delete
