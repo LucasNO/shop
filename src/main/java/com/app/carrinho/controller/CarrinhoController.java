@@ -98,7 +98,7 @@ public class CarrinhoController {
             carrinho.setQuantidade(quantidade);
             carrinhoService.alterarCarrinho(carrinho);
             HttpHeaders headers = new HttpHeaders();
-            headers.setLocation(ucBuilder.path("/shop/carrinho/{comprador}").buildAndExpand(carrinho.getComprador()).toUri());
+            headers.setLocation(ucBuilder.path("/shop/listCarrinho/{comprador}").buildAndExpand(carrinho.getComprador()).toUri());
             return ResponseEntity.status(HttpStatus.CREATED).headers(headers).build();
         }
     }
