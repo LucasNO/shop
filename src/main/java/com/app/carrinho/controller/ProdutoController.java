@@ -97,7 +97,7 @@ public class ProdutoController {
     }
 
     @Transactional
-    @PutMapping(path="/produto/{id}")
+    @PutMapping(path="/produto/")
     public ResponseEntity<Void> updateProduto(@RequestBody Produto produto, UriComponentsBuilder ucBuilder) {
         if (produtoService.verificarProdutoNull(produto)) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();

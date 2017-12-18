@@ -1,4 +1,4 @@
-# shop
+# Shop
 
 ## Carrinho de compra via Rest
 
@@ -60,7 +60,7 @@ Type: Json
 
 ### Inserindo Produto No Carrinho
 
-URL: https://shop-rest.herokuapp.com/shop/carrinho/{comprador}/{idPrduto}/{quantidade}
+URL: https://shop-rest.herokuapp.com/shop/carrinho/{nomeComprador}/{idPrduto}/{quantidade}
 
 Method: Post
 
@@ -72,13 +72,13 @@ Type: Json
 
 ### Listar Carrinho de Compras de um comprador 
 
-URL: https://shop-rest.herokuapp.com/shop/carrinho/{comprador}
+URL: https://shop-rest.herokuapp.com/shop/listCarrinho/{nomeComprador}
 
 Method: Get
 
 ### Atualizando Produto no Carrinho
 
-URL: https://shop-rest.herokuapp.com/shop/carrinho/{comprador}/{idPrduto}/{quantidade}
+URL: https://shop-rest.herokuapp.com/shop/carrinho/{nomeComprador}/{idPrduto}/{quantidade}
 
 Method: Put
 
